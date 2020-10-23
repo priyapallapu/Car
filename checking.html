@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        .pd {
+
+            padding : 40px 40px 40px 40px;
+            background-color: black;
+            color:white;
+            display: inline-block;
+           
+
+        }
+        .pdc {
+
+            padding :40px 40px 40px 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container pdc"><div class="row"><div class="col-md-6" id="verify">
+        <button type="submit" class="btn btn-success" onclick="myCheck()"> Click on it</button>
+        </div>
+        <div class="col-md-6 pd" id="work" onmouseover="myWork()" onmouseout="myPic()">
+            <p  >This has to rotate</p>
+        </div>
+        
+    </div></div></div>
+
+    <script>
+
+        function myCheck(){
+            document.getElementById("work").style.transform  = "rotate(260deg)";
+        }
+
+
+        function myWork(){
+            document.getElementById("work").style.transform = "scale(1.5,1.5)";
+        }
+
+        function myPic(){
+            document.getElementById("work").style.transform = "none";
+        }
+        
+
+    </script>
+</body>
+</html>
